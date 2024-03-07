@@ -57,9 +57,9 @@ body {
 		align-items: center;
 		gap: 20px;
 		height: 30px;
-		width: 240px;
+		width: 198px;
 		.signup--button {
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 700;
 			color: #fff;
 			background-color: inherit;
@@ -71,7 +71,7 @@ body {
 			}
 		}
 		.signin--button {
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 700;
 			border-radius: 12px;
 			padding: 7px;
@@ -83,7 +83,7 @@ body {
 			transition: all 0.3s ease;
 			&:hover {
 				text-shadow: 0 0 5px;
-				font-size: 26px;
+				font-size: 21px;
 			}
 		}
 	}
