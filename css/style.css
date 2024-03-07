@@ -116,7 +116,7 @@ body {
   width: 400px;
   height: 400px;
   z-index: -1;
-  background: url("/img/Ice-Cube-Water-PNG.png") top/cover no-repeat;
+  background: url("/img/ice.png") top/cover no-repeat;
   will-change: transform;
 }
 
