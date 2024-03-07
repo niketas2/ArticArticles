@@ -1,0 +1,125 @@
+body {
+  background-color: #070f2b;
+  color: #fff;
+}
+
+.wrapper {
+  font-family: 'Lato', sans-serif;
+  padding: 70px 120px 70px 120px;
+}
+
+.container {
+  max-width: 1620px;
+}
+
+.header--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--content .name {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+.header--content .name:hover {
+  text-shadow: 0px 0px 5px;
+}
+.header--content .header--nav {
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 25px;
+  display: flex;
+  gap: 50px;
+  margin-left: 150px;
+}
+.header--content .header--nav li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.header--content .header--nav li:hover {
+  text-shadow: 0 0 5px;
+}
+.header--content .header--nav li:hover::before {
+  width: 100%;
+}
+.header--content .header--nav li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width 0.35s;
+  box-shadow: 0 0 5px;
+}
+.header--content .header--buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header--content .header--buttons .signup--button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.header--content .header--buttons .signin--button {
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 7px;
+  background-color: #535c91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main--content {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+.main--content .paralax-text {
+  font-weight: 900;
+  position: absolute;
+  will-change: transform;
+}
+.main--content .Write {
+  padding-right: 100px;
+  font-size: 80px;
+  margin-right: 100px;
+}
+.main--content .Learn {
+  font-size: 80px;
+  margin-left: 150px;
+}
+.main--content .Share {
+  font-size: 80px;
+  margin-left: 400px;
+}
+
+.paralax--img {
+  left: 120px;
+  bottom: -100px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  background: url("/img/Ice-Cube-Water-PNG.png") top/cover no-repeat;
+  will-change: transform;
+}
+
+.footer {
+  text-align: center;
+}
