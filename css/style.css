@@ -5,11 +5,7 @@ body {
 
 .wrapper {
   font-family: 'Lato', sans-serif;
-  padding: 70px 120px 70px 120px;
-}
-
-.container {
-  max-width: 1620px;
+  padding: 30px 120px 30px 120px;
 }
 
 .header--content {
@@ -30,11 +26,11 @@ body {
 .header--content .header--nav {
   align-items: center;
   margin-top: 10px;
-  font-weight: 400;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 20px;
   display: flex;
   gap: 50px;
-  margin-left: 150px;
+  margin-left: 250px;
 }
 .header--content .header--nav li {
   cursor: pointer;
@@ -63,24 +59,36 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  height: 30px;
+  width: 240px;
 }
 .header--content .header--buttons .signup--button {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   background-color: inherit;
   border: none;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.header--content .header--buttons .signup--button:hover {
+  text-shadow: 0 0 5px;
 }
 .header--content .header--buttons .signin--button {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 12px;
   padding: 7px;
-  background-color: #535c91;
+  background-color: #2d3565da;
+  padding: 10px;
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header--content .header--buttons .signin--button:hover {
+  text-shadow: 0 0 5px;
+  font-size: 26px;
 }
 
 .main--content {
@@ -88,7 +96,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 73vh;
 }
 .main--content .paralax-text {
   font-weight: 900;
@@ -96,7 +104,6 @@ body {
   will-change: transform;
 }
 .main--content .Write {
-  padding-right: 100px;
   font-size: 80px;
   margin-right: 100px;
 }
@@ -121,5 +128,6 @@ body {
 }
 
 .footer {
+  margin-top: 50px;
   text-align: center;
 }

@@ -4,10 +4,7 @@ body {
 }
 .wrapper {
 	font-family: 'Lato', sans-serif;
-	padding: 70px 120px 70px 120px;
-}
-.container {
-	max-width: 1620px;
+	padding: 30px 120px 30px 120px;
 }
 .header--content {
 	display: flex;
@@ -26,11 +23,11 @@ body {
 	.header--nav {
 		align-items: center;
 		margin-top: 10px;
-		font-weight: 400;
-		font-size: 25px;
+		font-weight: 700;
+		font-size: 20px;
 		display: flex;
 		gap: 50px;
-		margin-left: 150px;
+		margin-left: 250px;
 		li {
 			cursor: pointer;
 			transition: all 0.3s ease;
@@ -59,23 +56,35 @@ body {
 		display: flex;
 		align-items: center;
 		gap: 20px;
+		height: 30px;
+		width: 240px;
 		.signup--button {
 			font-size: 25px;
-			font-weight: 500;
+			font-weight: 700;
 			color: #fff;
 			background-color: inherit;
 			border: none;
 			cursor: pointer;
+			transition: all 0.2s ease;
+			&:hover {
+				text-shadow: 0 0 5px;
+			}
 		}
 		.signin--button {
 			font-size: 25px;
-			font-weight: 500;
+			font-weight: 700;
 			border-radius: 12px;
 			padding: 7px;
-			background-color: #535c91;
+			background-color: #2d3565da;
+			padding: 10px;
 			color: #fff;
 			border: none;
 			cursor: pointer;
+			transition: all 0.3s ease;
+			&:hover {
+				text-shadow: 0 0 5px;
+				font-size: 26px;
+			}
 		}
 	}
 }
@@ -84,14 +93,13 @@ body {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	height: 70vh;
+	height: 73vh;
 	.paralax-text {
 		font-weight: 900;
 		position: absolute;
 		will-change: transform;
 	}
 	.Write {
-		padding-right: 100px;
 		font-size: 80px;
 		margin-right: 100px;
 	}
@@ -117,5 +125,8 @@ body {
 	will-change: transform;
 }
 .footer {
+	margin-top: 50px;
 	text-align: center;
+}
+.signup--menu {
 }
