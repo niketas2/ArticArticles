@@ -1,0 +1,262 @@
+@charset "UTF-8";
+body {
+  background: url("/img/bc.jpg") top/cover no-repeat;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  padding: 30px 120px 70px 120px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1620px;
+}
+
+.header--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.header--content .name {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+.header--content .name:hover {
+  text-shadow: 0px 0px 5px;
+}
+.header--content .header--nav {
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  gap: 50px;
+  margin-left: 250px;
+}
+.header--content .header--nav li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.header--content .header--nav li:hover {
+  text-shadow: 0 0 5px;
+}
+.header--content .header--nav li:hover::before {
+  width: 100%;
+}
+.header--content .header--nav li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width 0.35s;
+  box-shadow: 0 0 5px;
+}
+.header--content .header--buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 30px;
+  width: 240px;
+}
+.header--content .header--buttons .signup--button {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.header--content .header--buttons .signup--button:hover {
+  text-shadow: 0 0 5px;
+}
+.header--content .header--buttons .signin--button {
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 7px;
+  background-color: #242c5be8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header--content .header--buttons .signin--button:hover {
+  text-shadow: 0 0 5px;
+  font-size: 26px;
+}
+
+.signup--page {
+  display: flex;
+  justify-content: center;
+}
+
+.signup--menu {
+  box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.299);
+  padding: 80px;
+  display: grid;
+  height: 350px;
+  width: 300px;
+  background: rgba(7, 15, 43, 0.7);
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.signup--menu .signup--name {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.signup--menu .signup--name .user--name {
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.signup--menu .signup--name .name--input {
+  background: rgba(75, 80, 111, 0.5);
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.signup--menu .signup--name .name--input:focus {
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.566);
+}
+.signup--menu .signup--email {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.signup--menu .signup--email .user--email {
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.signup--menu .signup--email .email--input {
+  background: rgba(75, 80, 111, 0.5);
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.signup--menu .signup--email .email--input:focus {
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.566);
+}
+.signup--menu .signup--pass {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.signup--menu .signup--pass .user--pass {
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.signup--menu .signup--pass .pass-input {
+  background: rgba(75, 80, 111, 0.5);
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.signup--menu .signup--pass .pass-input:focus {
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.566);
+}
+.signup--menu .description {
+  list-style-type: circle;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.signup--menu .description li {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 900;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.signup--menu .checkbox {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+.signup--menu .checkbox input {
+  display: none;
+}
+.signup--menu .checkbox label {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 2px;
+}
+.signup--menu .checkbox label::before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: rgba(146, 144, 195, 0.75);
+}
+.signup--menu .checkbox input:checked + label::before {
+  content: '✔';
+  text-align: center;
+  font-size: 20px;
+  background-color: #41407e;
+  border: 1px solid #fff;
+}
+.signup--menu .checkbox a {
+  color: #fff;
+}
+.signup--menu .signup--page--signup-button {
+  text-align: center;
+}
+.signup--menu .signup--page--signup-button .signup {
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: rgba(66, 72, 113, 0.75);
+  border: 2px solid #ffffffa4;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.612);
+  transition: all 0.3s ease;
+}
+.signup--menu .signup--page--signup-button .signup:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 20px 5px white;
+}
+.signup--menu:hover {
+  background: rgba(7, 15, 43, 0.8);
+  border-radius: 45px;
+  box-shadow: 0px 0px 30px 20px rgba(255, 255, 255, 0.324);
+}
