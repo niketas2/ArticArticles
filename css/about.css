@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body {
+  background-color: #070f2b;
+  color: #fff;
+  background: url("../img/about.jpg") top/cover no-repeat;
+}
+
+.wrapper {
+  font-family: 'Lato', sans-serif;
+  padding: 30px 120px;
+}
+
+header {
+  z-index: 1;
+}
+header .header--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header--content .name {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+header .header--content .name:hover {
+  text-shadow: 0px 0px 5px;
+}
+header .header--content .header--nav {
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  gap: 50px;
+  margin-left: 250px;
+}
+header .header--content .header--nav li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+header .header--content .header--nav li:hover {
+  text-shadow: 0 0 5px;
+}
+header .header--content .header--nav li:hover::before {
+  width: 100%;
+}
+header .header--content .header--nav li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width 0.35s;
+  box-shadow: 0 0 5px;
+}
+header .header--content .header--buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 30px;
+  width: 198px;
+}
+header .header--content .header--buttons .signup--button {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+header .header--content .header--buttons .signup--button:hover {
+  text-shadow: 0 0 5px;
+}
+header .header--content .header--buttons .signin--button {
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 7px;
+  background-color: #2d3565da;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .header--content .header--buttons .signin--button:hover {
+  text-shadow: 0 0 5px;
+  font-size: 21px;
+}
+
+.about--us {
+  display: grid;
+  justify-items: center;
+  text-align: left;
+  margin-top: 220px;
+}
+.about--us .welcome {
+  color: #0f0f0fd6;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.about--us .about,
+.about--us .our--mission,
+.about--us .what--find,
+.about--us .inspiratin,
+.about--us .community,
+.about--us .join {
+  position: relative;
+  left: -100px;
+  /* Начальное положение текста за пределами блока */
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  max-width: 700px;
+}
+.about--us .about h1,
+.about--us .our--mission h1,
+.about--us .what--find h1,
+.about--us .inspiratin h1,
+.about--us .community h1,
+.about--us .join h1 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.about--us .about p,
+.about--us .our--mission p,
+.about--us .what--find p,
+.about--us .inspiratin p,
+.about--us .community p,
+.about--us .join p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+@keyframes slideIn {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 300px;
+    opacity: 1;
+  }
+}

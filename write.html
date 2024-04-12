@@ -5,13 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/write.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 	<div class="wrapper">
@@ -24,27 +23,28 @@
 					<li>Write</li>
 				</ul>
 				<div class="header--buttons">
-					<button class="signup--button">Sign Up</button>
-					<button class="signin--button">Sign In</button>
+					<button class="profile--button">Profile</button>
 				</div>
 			</div>
 		</header>
-		<div class="preview" id="preview">
-			<div class="paralax-text">
-				<div class="paralax--img" id="paralax--img">
-					<div class="paralax-ice">
-					</div>
+		<div class="write--block">
+			<div class="inputs">
+				<div class="post--name">
+					<p>Post name:</p>
+					<input type="text" class="post--name--input">
 				</div>
-				<p class="Write">Write</p>
-				<p class="Learn">Learn</p>
-				<p class="Share">Share</p>
+				<div class="post--description">
+					<p>Post description:</p>
+					<textarea name="post--description" class="post--description--text" id="" cols="30" rows=""></textarea>
+				</div>
+				<label for="imageInput" class="label">
+					<img src="img/screpca.png" alt="" class="label--image">
+				</label>
+				<input type="file" id="imageInput" class="input--image">
 			</div>
 		</div>
-		<div class="footer">
-			<p>Welcome to Arctic Articles, Where Comfort Meets Content</p>
-		</div>
 	</div>
-	<script src="/script.js"></script>
 </body>
+
 
 </html>

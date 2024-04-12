@@ -88,7 +88,7 @@ body {
 		}
 	}
 }
-.main--content {
+.preview {
 	text-align: center;
 	align-items: center;
 	display: flex;
@@ -121,12 +121,10 @@ body {
 	width: 400px;
 	height: 400px;
 	z-index: -1;
-	background: url('/img/ice.png') top / cover no-repeat;
+	background: url('../img/ice.png') top / cover no-repeat;
 	will-change: transform;
 }
 .footer {
 	margin-top: 50px;
 	text-align: center;
-}
-.signup--menu {
 }

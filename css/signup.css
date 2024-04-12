@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background: url("/img/bc.jpg") top/cover no-repeat;
+  background: url("../img/bc.jpg") top/cover no-repeat;
   color: #fff;
   font-family: 'Lato', sans-serif;
 }
